@@ -1,3 +1,5 @@
+/* police écriture */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -16,6 +18,7 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: "Raleway", sans-serif;
 }
 
 .main-container {
@@ -101,7 +104,184 @@ a {
     border-top: 2px solid #0065FC;
     padding-top: 10px;
   }
-    
+
+  /* style section info */
+
+  h1
+   {
+    font-size: 1.625em;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .info p
+   {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+    form {
+    display: flex;
+    }
+
+  form div
+  {
+    position: relative;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    margin-bottom: 28px;
+  }
+
+  form div .fa-location-dot
+  {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    font-size: 18px;
+    color: #000;
+  }
+
+  form input 
+   {
+    width: 213px;
+    height: 49px;
+    outline: none;
+    border: 2px solid #F2F2F2;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  form input::placeholder 
+  {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+  }
+
+  .form-button-recherche
+  {
+    width:  132px;
+    height:  49px;
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    background-color:  #0065FC;
+    outline: none;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .form-loupe
+  {
+    width: 49px;
+    height: 49px;
+    padding: 15px 16px 15px 16px;
+    border-radius: 15px;
+    background-color:  #0065FC;
+    color: #FFF;
+    border: none;
+    display: none;
+  }
+
+  .form-loupe .fa-magnifying-glass
+  {
+    color: #FFF;
+    font-size: 1.063em;
+  }
+
+  /* style section filtres  */
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.filtres h1 {
+    margin-right: 20px;
+    width: 54px;
+    height: 21px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.filtres div {
+    display: flex;
+    align-items: center;
+}
+
+.filtres button {
+    width:  190px;
+    height:  50px;
+    padding: 4px 19px 4px 19px;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px ;
+    border: 2px solid #D9D9D9;
+    background-color: #FFF;
+
+}
+
+.filtres button:hover {
+    background-color: #DEEBFF;
+}
+
+.filtres i {
+    font-size: 20px;
+    color: #0065FC; 
+    padding-right: 10px;
+}
+
+.filtres span 
+
+{
+font-size: 17px;
+font-weight: 700;
+line-height: 19.96px;
+text-align: left;
+color: #000;
+}
+
+/* petite-info */
+
+.petite-info
+{
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+ 
+}
+
+.petite-info p
+{
+  padding: 0;
+  padding-left: 15px;
+}
+  
+.petite-info i
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #F2F2F2;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  color: #0065FC;
+}
+
+
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -119,6 +299,55 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+  
+}
+
+.hebergements-cards
+{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 5px ;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.hebergements-cards a
+{
+    width: 31%;
+    height: 207px;
+    margin-bottom: 50px;
+    filter: drop-shadow(0 3px 15px rgba(0,0,0,0.2));
+
+}
+.hebergements-cards a:hover
+{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.card img 
+{
+    width: 100%;
+    height: 110px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.Hebergements-title h2
+{
+margin-bottom: 20px;
+}
+
+.card-content
+{
+    padding-left: 15px;
+}
+
+.Affichage 
+{
+font-size: 1.125em;
+font-weight: 700;
 }
 
 /****** Populaires ***********/
@@ -165,6 +394,8 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
 
 
 
