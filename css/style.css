@@ -309,6 +309,7 @@ color: #000;
     gap: 5px ;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
     
     
 }
@@ -344,10 +345,11 @@ margin-bottom: 20px;
     padding-left: 15px;
 }
 
-.Affichage 
+.Affichage a 
 {
 font-size: 1.125em;
 font-weight: 700;
+
 }
 
 /****** Populaires ***********/
