@@ -19,6 +19,8 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Raleway", sans-serif;
+
+
 }
 
 .main-container {
@@ -354,15 +356,14 @@ font-weight: 700;
 
 /* activité */
 
-/* Conteneur des cartes */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espace entre les cartes */
+    gap: 20px; 
     justify-content: center;
   }
   
-  /* Styles généraux pour toutes les cartes */
+  
   .card-grande,
   .card-pomegues,
   .card-notredame {
@@ -406,7 +407,7 @@ font-weight: 700;
     object-fit: cover;
   }
   
-  /* Vieux Port + Parc National des Calanques */
+  
   .card-grande {
     flex: 1 1 23%;
     height: 450px;
@@ -414,7 +415,7 @@ font-weight: 700;
   
   .card-grande .card-body-grande {
     padding: 0;
-    text-align: center; /* Center the text */
+    text-align: center; 
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -422,6 +423,7 @@ font-weight: 700;
   
   .card-grande p {
     background-color: white;
+    color: #000;
     border-radius: 0 0 20px 20px;
     width: 100%;
     margin: 0;
@@ -431,12 +433,12 @@ font-weight: 700;
   /* Fort de Pomègues */
   .card-pomegues {
     flex: 1 1 23%;
-    height: 450px; /* Adjusted height for Fort de Pomègues */
+    height: 450px; 
   }
   
   .card-pomegues .card-body-pomegues {
     padding: 0;
-    text-align: center; /* Center the text */
+    text-align: center; 
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -453,12 +455,12 @@ font-weight: 700;
   /* Notre-Dame-de-la-Garde */
   .card-notredame {
     flex: 1 1 23%;
-    height: 450px; /* Adjusted height for Notre-Dame-de-la-Garde */
+    height: 450px; 
   }
   
   .card-notredame .card-body-notredame {
     padding: 0;
-    text-align: center; /* Center the text */
+    text-align: center; 
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -471,6 +473,7 @@ font-weight: 700;
     margin: 0;
     padding: 700px 0;
   }
+ 
   
 
 /****** Populaires ***********/
