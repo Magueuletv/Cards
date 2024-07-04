@@ -460,25 +460,27 @@ font-weight: 700;
 footer
 {
   display: flex;
-  justify-content: space-between;
-  padding: 35px 365px 35px 30px;
   background-color: #F2F2F2;
   margin-top: 35px;
+  justify-content: space-between;
+  padding: 20px;
+
 }
 
-footer ul
+
+ footer ul
 {
   list-style: none;
-  padding: 0px;
+  width: 40%;
 }
 
-footer a
+ footer a
 {
   text-decoration: none;
   color: black;
 }
 
-footer li
+ footer li
 {
   padding: 10px 0px 5px 10px;
 }
@@ -487,7 +489,7 @@ footer li
 {
   font-weight: bold;
   padding-bottom: 15px;
-}
+}    
 
 /*Footer*/
 
@@ -500,13 +502,12 @@ footer li
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   /* Navig */
-    .card-image-grande img,
-    .card-image-pomegues img,
-    .card-image-notredame img {
-      width: 100%;
-      height: 395px;
-      object-fit: cover;
-    }
+  nav 
+  {
+  padding-right: 520px;
+  }
+ 
+  
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -537,6 +538,49 @@ footer li
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+     /* activité */
+
+  .card-grande
+  {
+    filter: drop-shadow(0 3px 15px rgba(0,0,0,0.2));
+    border-radius: 20px;
+    width: 33%;
+    height: 270px;
+  }
+  .card-grande a
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .card-grande:hover
+  {
+    transform: scale(1.1);
+    transition: 0.3;
+  }
+  .card-image-grande 
+  {
+    width: 100%;
+    height: 220px;
+  }
+  
+  .card-image-grande img
+  {
+    width: 100%;
+    height: 220px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  .card-title-grande p 
+  {
+    font-size: 0.85em;
+    padding: 0 0 0 10px;
+  }
+  /* footer */
+  footer li
+{
+  padding: 10px 5px ;
+}
 
 }
 
