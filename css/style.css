@@ -673,9 +673,8 @@ footer
 {
   width: 100%;
   flex-wrap: wrap;
-  display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 5px;
   margin: 0 auto;
 }
 
@@ -683,12 +682,17 @@ footer
 {
   width: 44%;
   flex-direction: row;
+  margin-bottom: 15px;
 }
 
 .button div i
 {
-  font-size: 1.1em;
+  font-size: 1em;
   padding-right: 5px;
+}
+.button div span
+{
+  font-size: 0.9em;
 }
  /* header mobile */
 
